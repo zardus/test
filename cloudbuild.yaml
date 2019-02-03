@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/cloud-builders/python'
-  args: ['a.py']
-options:
-  machineType: 'N1_HIGHCPU_32'
+- name: 'gcr.io/cloud-builders/git'
+  args: ['log']
+#options:
+#  machineType: 'N1_HIGHCPU_32'
