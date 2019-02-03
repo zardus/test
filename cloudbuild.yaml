@@ -1,7 +1,11 @@
 steps:
 - name: 'ubuntu:bionic'
   args: ['pwd']
+- name: 'ubuntu:bionic'
+  args: ['ls']
+- name: 'ubuntu:bionic'
+  args: ['env']
 - name: 'gcr.io/cloud-builders/wget'
-  args: ['--help']
+  args: ['https://raw.githubusercontent.com/angr/angr-dev/master/tests/travis-install.sh', '-O', 'travis-install.sh']
 #options:
 #  machineType: 'N1_HIGHCPU_32'
