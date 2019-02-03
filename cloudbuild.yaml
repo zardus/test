@@ -1,5 +1,7 @@
 steps:
 - name: 'ubuntu:bionic'
-  args: ['ls']
+  args: ['pwd']
+- name: 'gcr.io/cloud-builders/wget'
+  args: ['--help']
 #options:
 #  machineType: 'N1_HIGHCPU_32'
