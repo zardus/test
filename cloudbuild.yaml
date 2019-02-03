@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/cloud-builders/git'
-  args: ['--help']
+- name: 'ubuntu:bionic'
+  args: ['ls']
 #options:
 #  machineType: 'N1_HIGHCPU_32'
